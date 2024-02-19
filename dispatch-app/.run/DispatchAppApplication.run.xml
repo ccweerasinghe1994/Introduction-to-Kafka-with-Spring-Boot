@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DispatchAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="dispatch-app" />
+    <projectPathOnTarget name="projectPathOnTarget" value="{exitCode=0, timeout=false, cancelled=false, stdout=/mnt/c/Users/USER/AppData/Local/Programs/IntelliJ IDEA Ultimate/jbr/bin , stderr=}/dispatch-app" />
+    <target name="WSL - Ubuntu-22.04" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.chamara.dispatchapp.DispatchAppApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
