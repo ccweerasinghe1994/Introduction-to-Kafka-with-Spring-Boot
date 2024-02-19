@@ -1,13 +1,13 @@
-package com.wchamara.dispatch;
+package org.chamara.dispatchapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DispatchApplicationTests {
+class DispatchAppApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
