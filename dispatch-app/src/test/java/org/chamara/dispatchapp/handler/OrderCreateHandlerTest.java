@@ -24,9 +24,20 @@ class OrderCreateHandlerTest {
     }
 
     @Test
-    void itShouldListen() {
+    void itShouldListen() throws Exception {
         // given
         OrderCreated testEvent = TestEventData.buildOrderCreatedEvent(randomUUID(), randomUUID().toString());
+        // when
+        underTest.listen(testEvent);
+        // then
+        verify(dispatchServiceMock, times(1)).process(testEvent);
+    }
+
+    @Test
+    void itWillThrowsExceptionListen() throws Exception {
+        // given
+        OrderCreated testEvent = TestEventData.buildOrderCreatedEvent(randomUUID(), randomUUID().toString());
+        doThrow(new RuntimeException("Service failure")).when(dispatchServiceMock).process(testEvent);
         // when
         underTest.listen(testEvent);
         // then
